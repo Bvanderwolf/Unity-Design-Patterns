@@ -1,6 +1,6 @@
 /// <summary>
 /// An actor that uses <see cref="KnightHealthPoints"/>.
 /// </summary>
-public class KnightBehaviour : ActorBehaviour
+public class KnightBehaviour : ActorBehaviour<KnightHealthPoints>
 {
 }

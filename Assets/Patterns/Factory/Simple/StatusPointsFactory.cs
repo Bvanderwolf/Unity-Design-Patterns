@@ -31,6 +31,14 @@ public static class StatusPointsFactory
     public static StatusPoints CreateHealthForActor(Type actorType) => CreateHealthForActor(actorType, StatusPoints.DEFAULT_MAX_POINT);
 
     /// <summary>
+    /// Creates a new health status points object for an actor of type T.
+    /// </summary>
+    /// <typeparam name="T">The type of status points to return.</typeparam>
+    /// <param name="actorType">The actor type to create the health status points for.</param>
+    /// <returns>The health status points.</returns>
+    public static T CreateHealthForActor<T>(Type actorType) where T : StatusPoints => (T)CreateHealthForActor(actorType);
+
+    /// <summary>
     /// Creates a new health status points object for an actor.
     /// </summary>
     /// <param name="actorType">The actor type to create the health status points for.</param>
