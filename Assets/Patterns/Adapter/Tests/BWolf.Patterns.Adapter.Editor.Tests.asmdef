@@ -1,8 +1,8 @@
 {
-    "name": "BWolf.Factory.Simple.Editor.Tests",
+    "name": "BWolf.Patterns.Adapter.Editor.Tests",
     "rootNamespace": "",
     "references": [
-        "GUID:9e7ce525c864e0b4fbcbe08d4bf1a7fb"
+        "GUID:c14cdb574d5f1be4cbf3162573f14a3c"
     ],
     "includePlatforms": [
         "Editor"

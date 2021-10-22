@@ -1,0 +1,20 @@
+{
+    "name": "BWolf.Patterns.Factory.Simple.Editor.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9e7ce525c864e0b4fbcbe08d4bf1a7fb"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
