@@ -6,7 +6,7 @@ using UnityEngine;
 namespace BWolf.Patterns.Adapters
 {
     /// <summary>
-    /// An adapter for pagination done on a collection.
+    /// An adapter for pagination done on an enumerable.
     /// </summary>
     public class Enumerable<T> : IPaginationAdapter<T>
     {
@@ -63,7 +63,10 @@ namespace BWolf.Patterns.Adapters
             if (totalItemCount <= limit)
                 return new PaginationResult<T>(array, 1, 1, totalItemCount, limit);
 
-            T[] items = new T[limit];
+            int totalPageCount = Mathf.CeilToInt(totalItemCount / (float)limit);
+            int itemCount = (totalPageCount == page) ? (totalItemCount - ((page - 1) * limit)) : limit;
+
+            T[] items = new T[itemCount];
             int startIndex = (page - 1) * limit;
             if (startIndex >= totalItemCount)
                 throw new InvalidOperationException("The page to use for pagination is to great for the collection size.");
@@ -72,7 +75,6 @@ namespace BWolf.Patterns.Adapters
             for (int i = 0, j = startIndex; j < endIndex && j < totalItemCount; i++, j++)
                 items[i] = array[j];
 
-            int totalPageCount = Mathf.CeilToInt(totalItemCount / (float)limit);
             return new PaginationResult<T>(items, page, totalPageCount, totalItemCount, limit);
         }
     }

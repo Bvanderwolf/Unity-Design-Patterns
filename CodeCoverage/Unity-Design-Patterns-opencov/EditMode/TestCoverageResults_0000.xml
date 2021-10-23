@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.0.0.0">
+  <Summary numSequencePoints="156" visitedSequencePoints="135" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="86.54" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="11" numClasses="12" visitedMethods="31" numMethods="41" />
+  <Modules>
+    <Module>
+      <Summary numSequencePoints="76" visitedSequencePoints="55" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="72.37" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="7" numClasses="8" visitedMethods="23" numMethods="33" />
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>BWolf.Patterns.Factory.Runtime</ModuleName>
+      <Files>
+        <File uid="1" fullPath="D:/Persoonlijk/Unity/Unity-Design-Patterns/Assets/Patterns/Factory/Simple/MonoBehaviours/ActorBehaviour.cs" />
+        <File uid="2" fullPath="D:/Persoonlijk/Unity/Unity-Design-Patterns/Assets/Patterns/Factory/Simple/StatusPoints/KnightHealthPoints.cs" />
+        <File uid="3" fullPath="D:/Persoonlijk/Unity/Unity-Design-Patterns/Assets/Patterns/Factory/Simple/StatusPoints/PriestHealthPoints.cs" />
+        <File uid="4" fullPath="D:/Persoonlijk/Unity/Unity-Design-Patterns/Assets/Patterns/Factory/Simple/StatusPoints/ShieldStatusPoints.cs" />
+        <File uid="5" fullPath="D:/Persoonlijk/Unity/Unity-Design-Patterns/Assets/Patterns/Factory/Simple/StatusPoints/SquireHealthPoints.cs" />
+        <File uid="6" fullPath="D:/Persoonlijk/Unity/Unity-Design-Patterns/Assets/Patterns/Factory/Simple/StatusPoints/StatusPoints.cs" />
+        <File uid="7" fullPath="D:/Persoonlijk/Unity/Unity-Design-Patterns/Assets/Patterns/Factory/Simple/StatusPointsFactory.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <FullName>BWolf.Patterns.Factory.Simple.ActorBehaviour[T]</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>T BWolf.Patterns.Factory.Simple.ActorBehaviour[T]::get_Health()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="157" ordinal="0" offset="0" sl="19" sc="0" el="19" ec="0" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>System.Void BWolf.Patterns.Factory.Simple.ActorBehaviour[T]::Reset()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="158" ordinal="0" offset="0" sl="25" sc="0" el="25" ec="0" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="21" visitedSequencePoints="17" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="80.95" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="6" />
+          <FullName>BWolf.Patterns.Factory.Simple.KnightHealthPoints</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663303</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.ShieldStatusPoints BWolf.Patterns.Factory.Simple.KnightHealthPoints::get_Shield()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="159" ordinal="0" offset="0" sl="31" sc="0" el="31" ec="0" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663308</MetadataToken>
+              <Name>System.Void BWolf.Patterns.Factory.Simple.KnightHealthPoints::Remove(System.Int32)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="160" ordinal="0" offset="0" sl="64" sc="9" el="64" ec="9" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="161" ordinal="0" offset="1" sl="66" sc="13" el="66" ec="13" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="162" ordinal="0" offset="14" sl="69" sc="13" el="69" ec="13" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="163" ordinal="0" offset="28" sl="73" sc="13" el="73" ec="13" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="164" ordinal="0" offset="36" sl="74" sc="13" el="74" ec="13" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="165" ordinal="0" offset="37" sl="75" sc="17" el="75" ec="17" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="166" ordinal="0" offset="44" sl="76" sc="17" el="76" ec="17" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="167" ordinal="0" offset="59" sl="77" sc="13" el="77" ec="13" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="168" ordinal="0" offset="60" sl="78" sc="9" el="78" ec="9" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663304</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.KnightHealthPoints::KnightHealthPoints()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="169" ordinal="0" offset="0" sl="36" sc="0" el="36" ec="0" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="170" ordinal="0" offset="19" sl="37" sc="0" el="37" ec="0" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="171" ordinal="0" offset="20" sl="38" sc="0" el="38" ec="0" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663305</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.KnightHealthPoints::KnightHealthPoints(System.Int32)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="172" ordinal="0" offset="0" sl="44" sc="52" el="44" ec="52" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="173" ordinal="0" offset="20" sl="45" sc="9" el="45" ec="9" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="174" ordinal="0" offset="21" sl="46" sc="9" el="46" ec="9" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663306</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.KnightHealthPoints::KnightHealthPoints(BWolf.Patterns.Factory.Simple.ShieldStatusPoints)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="175" ordinal="0" offset="0" sl="52" sc="64" el="52" ec="64" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="176" ordinal="0" offset="10" sl="53" sc="9" el="53" ec="9" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="177" ordinal="0" offset="11" sl="54" sc="9" el="54" ec="9" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663307</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.KnightHealthPoints::KnightHealthPoints(System.Int32, BWolf.Patterns.Factory.Simple.ShieldStatusPoints)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="178" ordinal="0" offset="0" sl="60" sc="79" el="60" ec="79" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="3" uspid="179" ordinal="0" offset="8" sl="60" sc="98" el="60" ec="98" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="13" visitedSequencePoints="10" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="76.92" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="5" />
+          <FullName>BWolf.Patterns.Factory.Simple.PriestHealthPoints</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663309</MetadataToken>
+              <Name>System.Single BWolf.Patterns.Factory.Simple.PriestHealthPoints::get_HealPower()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="180" ordinal="0" offset="0" sl="23" sc="35" el="23" ec="35" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663313</MetadataToken>
+              <Name>System.Void BWolf.Patterns.Factory.Simple.PriestHealthPoints::Add(System.Int32)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="181" ordinal="0" offset="0" sl="51" sc="9" el="51" ec="9" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="2" uspid="182" ordinal="0" offset="1" sl="52" sc="13" el="52" ec="13" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="2" uspid="183" ordinal="0" offset="11" sl="53" sc="13" el="53" ec="13" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="2" uspid="184" ordinal="0" offset="33" sl="54" sc="9" el="54" ec="9" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663310</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.PriestHealthPoints::PriestHealthPoints()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="185" ordinal="0" offset="0" sl="33" sc="0" el="33" ec="0" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="186" ordinal="0" offset="12" sl="33" sc="0" el="33" ec="0" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="187" ordinal="0" offset="13" sl="33" sc="0" el="33" ec="0" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663311</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.PriestHealthPoints::PriestHealthPoints(System.Single)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="188" ordinal="0" offset="0" sl="40" sc="54" el="40" ec="54" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="189" ordinal="0" offset="10" sl="40" sc="89" el="40" ec="89" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="190" ordinal="0" offset="11" sl="40" sc="91" el="40" ec="91" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663312</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.PriestHealthPoints::PriestHealthPoints(System.Int32, System.Single)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="191" ordinal="0" offset="0" sl="47" sc="69" el="47" ec="69" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="192" ordinal="0" offset="8" sl="47" sc="88" el="47" ec="88" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="13" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="46.15" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="5" />
+          <FullName>BWolf.Patterns.Factory.Simple.ShieldStatusPoints</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663314</MetadataToken>
+              <Name>System.Single BWolf.Patterns.Factory.Simple.ShieldStatusPoints::get_Strength()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="193" ordinal="0" offset="0" sl="22" sc="0" el="22" ec="0" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663318</MetadataToken>
+              <Name>System.Void BWolf.Patterns.Factory.Simple.ShieldStatusPoints::Remove(System.Int32)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="194" ordinal="0" offset="0" sl="49" sc="9" el="49" ec="9" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="2" uspid="195" ordinal="0" offset="1" sl="51" sc="13" el="51" ec="13" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="2" uspid="196" ordinal="0" offset="17" sl="54" sc="13" el="54" ec="13" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="2" uspid="197" ordinal="0" offset="37" sl="55" sc="9" el="55" ec="9" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663315</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.ShieldStatusPoints::ShieldStatusPoints()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="198" ordinal="0" offset="0" sl="32" sc="0" el="32" ec="0" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="199" ordinal="0" offset="12" sl="32" sc="0" el="32" ec="0" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="200" ordinal="0" offset="13" sl="32" sc="0" el="32" ec="0" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663316</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.ShieldStatusPoints::ShieldStatusPoints(System.Single)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="201" ordinal="0" offset="0" sl="38" sc="0" el="38" ec="0" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="202" ordinal="0" offset="10" sl="38" sc="0" el="38" ec="0" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="0" uspid="203" ordinal="0" offset="11" sl="38" sc="0" el="38" ec="0" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663317</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.ShieldStatusPoints::ShieldStatusPoints(System.Single, System.Int32)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="204" ordinal="0" offset="0" sl="45" sc="68" el="45" ec="68" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="3" uspid="205" ordinal="0" offset="8" sl="45" sc="87" el="45" ec="87" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="6" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="50.00" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="2" />
+          <FullName>BWolf.Patterns.Factory.Simple.SquireHealthPoints</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663319</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.SquireHealthPoints::SquireHealthPoints()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="206" ordinal="0" offset="0" sl="14" sc="0" el="14" ec="0" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="207" ordinal="0" offset="9" sl="14" sc="0" el="14" ec="0" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="208" ordinal="0" offset="10" sl="14" sc="0" el="14" ec="0" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663320</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.SquireHealthPoints::SquireHealthPoints(System.Int32)</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="209" ordinal="0" offset="0" sl="20" sc="52" el="20" ec="52" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="210" ordinal="0" offset="8" sl="20" sc="68" el="20" ec="68" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1" uspid="211" ordinal="0" offset="9" sl="20" sc="70" el="20" ec="70" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="10" visitedSequencePoints="10" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="6" numMethods="6" />
+          <FullName>BWolf.Patterns.Factory.Simple.StatusPoints</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663321</MetadataToken>
+              <Name>System.Int32 BWolf.Patterns.Factory.Simple.StatusPoints::get_Max()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="31" uspid="212" ordinal="0" offset="0" sl="28" sc="27" el="28" ec="27" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663322</MetadataToken>
+              <Name>System.Int32 BWolf.Patterns.Factory.Simple.StatusPoints::get_Current()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="18" uspid="213" ordinal="0" offset="0" sl="33" sc="31" el="33" ec="31" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663324</MetadataToken>
+              <Name>System.Void BWolf.Patterns.Factory.Simple.StatusPoints::Update(System.Int32)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="15" uspid="214" ordinal="0" offset="0" sl="55" sc="47" el="55" ec="47" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663325</MetadataToken>
+              <Name>System.Void BWolf.Patterns.Factory.Simple.StatusPoints::Remove(System.Int32)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="215" ordinal="0" offset="0" sl="61" sc="51" el="61" ec="51" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663326</MetadataToken>
+              <Name>System.Void BWolf.Patterns.Factory.Simple.StatusPoints::Add(System.Int32)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="216" ordinal="0" offset="0" sl="67" sc="48" el="67" ec="48" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663323</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.StatusPoints::StatusPoints(System.Int32)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="16" uspid="217" ordinal="0" offset="0" sl="44" sc="9" el="44" ec="9" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="16" uspid="218" ordinal="0" offset="7" sl="45" sc="9" el="45" ec="9" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="16" uspid="219" ordinal="0" offset="8" sl="46" sc="13" el="46" ec="13" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="16" uspid="220" ordinal="0" offset="15" sl="47" sc="13" el="47" ec="13" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="16" uspid="221" ordinal="0" offset="27" sl="48" sc="9" el="48" ec="9" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="8" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="75.00" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="4" />
+          <FullName>BWolf.Patterns.Factory.Simple.StatusPointsFactory</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663327</MetadataToken>
+              <Name>static BWolf.Patterns.Factory.Simple.StatusPoints BWolf.Patterns.Factory.Simple.StatusPointsFactory::CreateHealthForActor(System.Type)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="222" ordinal="0" offset="0" sl="33" sc="76" el="33" ec="76" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663328</MetadataToken>
+              <Name>static T BWolf.Patterns.Factory.Simple.StatusPointsFactory::CreateHealthForActor[T](System.Type)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="223" ordinal="0" offset="0" sl="41" sc="0" el="41" ec="0" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="80.00" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="80.00" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663329</MetadataToken>
+              <Name>static BWolf.Patterns.Factory.Simple.StatusPoints BWolf.Patterns.Factory.Simple.StatusPointsFactory::CreateHealthForActor(System.Type, System.Int32)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="224" ordinal="0" offset="0" sl="50" sc="9" el="50" ec="9" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="3" uspid="225" ordinal="0" offset="1" sl="51" sc="13" el="51" ec="13" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="226" ordinal="0" offset="19" sl="52" sc="17" el="52" ec="17" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="3" uspid="227" ordinal="0" offset="30" sl="54" sc="13" el="54" ec="13" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="3" uspid="228" ordinal="0" offset="50" sl="55" sc="9" el="55" ec="9" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663330</MetadataToken>
+              <Name>static BWolf.Patterns.Factory.Simple.StatusPointsFactory::StatusPointsFactory()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="229" ordinal="0" offset="0" sl="21" sc="9" el="21" ec="9" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="3" />
+          <FullName>BWolf.Patterns.Factory.Simple.StatusPointsFactory/&lt;&gt;c</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663337</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.StatusPoints BWolf.Patterns.Factory.Simple.StatusPointsFactory/&lt;&gt;c::&lt;.cctor&gt;b__5_0(System.Int32)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="230" ordinal="0" offset="0" sl="23" sc="55" el="23" ec="55" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663338</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.StatusPoints BWolf.Patterns.Factory.Simple.StatusPointsFactory/&lt;&gt;c::&lt;.cctor&gt;b__5_1(System.Int32)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="231" ordinal="0" offset="0" sl="24" sc="55" el="24" ec="55" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663339</MetadataToken>
+              <Name>BWolf.Patterns.Factory.Simple.StatusPoints BWolf.Patterns.Factory.Simple.StatusPointsFactory/&lt;&gt;c::&lt;.cctor&gt;b__5_2(System.Int32)</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="232" ordinal="0" offset="0" sl="25" sc="55" el="25" ec="55" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module>
+      <Summary numSequencePoints="80" visitedSequencePoints="80" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="4" numClasses="4" visitedMethods="8" numMethods="8" />
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>Bwolf.Patterns.Adapter.Runtime</ModuleName>
+      <Files>
+        <File uid="8" fullPath="D:/Persoonlijk/Unity/Unity-Design-Patterns/Assets/Patterns/Adapter/Collection.cs" />
+        <File uid="9" fullPath="D:/Persoonlijk/Unity/Unity-Design-Patterns/Assets/Patterns/Adapter/Enumerable.cs" />
+        <File uid="10" fullPath="D:/Persoonlijk/Unity/Unity-Design-Patterns/Assets/Patterns/Adapter/PaginationResult.cs" />
+        <File uid="11" fullPath="D:/Persoonlijk/Unity/Unity-Design-Patterns/Assets/Patterns/Adapter/EmbeddedPatterns/Factory/PaginatorFactory.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="35" visitedSequencePoints="35" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>BWolf.Patterns.Adapters.Collection[T]</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="29" visitedSequencePoints="29" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>BWolf.Patterns.Adapters.PaginationResult[T] BWolf.Patterns.Adapters.Collection[T]::Paginate()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="233" ordinal="0" offset="0" sl="46" sc="0" el="46" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="8" uspid="234" ordinal="0" offset="1" sl="47" sc="0" el="47" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="235" ordinal="0" offset="16" sl="48" sc="0" el="48" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="7" uspid="236" ordinal="0" offset="27" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="237" ordinal="0" offset="45" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="6" uspid="238" ordinal="0" offset="56" sl="53" sc="0" el="53" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="239" ordinal="0" offset="74" sl="54" sc="0" el="54" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="5" uspid="240" ordinal="0" offset="85" sl="56" sc="0" el="56" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="5" uspid="241" ordinal="0" offset="97" sl="57" sc="0" el="57" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="242" ordinal="0" offset="107" sl="58" sc="0" el="58" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="243" ordinal="0" offset="133" sl="60" sc="0" el="60" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="244" ordinal="0" offset="140" sl="61" sc="0" el="61" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="245" ordinal="0" offset="154" sl="63" sc="0" el="63" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="246" ordinal="0" offset="172" sl="64" sc="0" el="64" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="247" ordinal="0" offset="194" sl="66" sc="0" el="66" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="248" ordinal="0" offset="210" sl="67" sc="0" el="67" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="249" ordinal="0" offset="245" sl="69" sc="0" el="69" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="250" ordinal="0" offset="253" sl="70" sc="0" el="70" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="251" ordinal="0" offset="270" sl="71" sc="0" el="71" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="252" ordinal="0" offset="284" sl="72" sc="0" el="72" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="253" ordinal="0" offset="295" sl="74" sc="0" el="74" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="254" ordinal="0" offset="306" sl="75" sc="0" el="75" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="255" ordinal="0" offset="309" sl="75" sc="0" el="75" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="6" uspid="256" ordinal="0" offset="315" sl="76" sc="0" el="76" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="6" uspid="257" ordinal="0" offset="332" sl="75" sc="0" el="75" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="6" uspid="258" ordinal="0" offset="338" sl="75" sc="0" el="75" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="8" uspid="259" ordinal="0" offset="344" sl="75" sc="0" el="75" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="260" ordinal="0" offset="364" sl="78" sc="0" el="78" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="261" ordinal="0" offset="389" sl="79" sc="0" el="79" ec="0" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>BWolf.Patterns.Adapters.Collection[T]::Collection(System.Collections.Generic.ICollection[T], System.Int32, System.Int32)</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="9" uspid="262" ordinal="0" offset="0" sl="33" sc="0" el="33" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="9" uspid="263" ordinal="0" offset="7" sl="34" sc="0" el="34" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="9" uspid="264" ordinal="0" offset="8" sl="35" sc="0" el="35" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="9" uspid="265" ordinal="0" offset="15" sl="37" sc="0" el="37" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="9" uspid="266" ordinal="0" offset="22" sl="38" sc="0" el="38" ec="0" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="9" uspid="267" ordinal="0" offset="29" sl="39" sc="0" el="39" ec="0" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="34" visitedSequencePoints="34" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>BWolf.Patterns.Adapters.Enumerable[T]</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="28" visitedSequencePoints="28" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663300</MetadataToken>
+              <Name>BWolf.Patterns.Adapters.PaginationResult[T] BWolf.Patterns.Adapters.Enumerable[T]::Paginate()</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="268" ordinal="0" offset="0" sl="47" sc="0" el="47" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="8" uspid="269" ordinal="0" offset="1" sl="48" sc="0" el="48" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="270" ordinal="0" offset="16" sl="49" sc="0" el="49" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="7" uspid="271" ordinal="0" offset="27" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="272" ordinal="0" offset="45" sl="52" sc="0" el="52" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="6" uspid="273" ordinal="0" offset="56" sl="54" sc="0" el="54" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="274" ordinal="0" offset="74" sl="55" sc="0" el="55" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="5" uspid="275" ordinal="0" offset="85" sl="57" sc="0" el="57" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="5" uspid="276" ordinal="0" offset="97" sl="59" sc="0" el="59" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="5" uspid="277" ordinal="0" offset="101" sl="60" sc="0" el="60" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="278" ordinal="0" offset="111" sl="61" sc="0" el="61" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="279" ordinal="0" offset="133" sl="63" sc="0" el="63" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="280" ordinal="0" offset="151" sl="64" sc="0" el="64" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="3" uspid="281" ordinal="0" offset="173" sl="66" sc="0" el="66" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="3" uspid="282" ordinal="0" offset="189" sl="67" sc="0" el="67" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="3" uspid="283" ordinal="0" offset="224" sl="69" sc="0" el="69" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="3" uspid="284" ordinal="0" offset="232" sl="70" sc="0" el="70" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="3" uspid="285" ordinal="0" offset="249" sl="71" sc="0" el="71" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="286" ordinal="0" offset="263" sl="72" sc="0" el="72" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="2" uspid="287" ordinal="0" offset="274" sl="74" sc="0" el="74" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="2" uspid="288" ordinal="0" offset="285" sl="75" sc="0" el="75" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="2" uspid="289" ordinal="0" offset="288" sl="75" sc="0" el="75" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="6" uspid="290" ordinal="0" offset="294" sl="76" sc="0" el="76" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="6" uspid="291" ordinal="0" offset="311" sl="75" sc="0" el="75" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="6" uspid="292" ordinal="0" offset="317" sl="75" sc="0" el="75" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="8" uspid="293" ordinal="0" offset="323" sl="75" sc="0" el="75" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="2" uspid="294" ordinal="0" offset="343" sl="78" sc="0" el="78" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="295" ordinal="0" offset="368" sl="79" sc="0" el="79" ec="0" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>BWolf.Patterns.Adapters.Enumerable[T]::Enumerable(System.Collections.Generic.IEnumerable[T], System.Int32, System.Int32)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="9" uspid="296" ordinal="0" offset="0" sl="34" sc="0" el="34" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="9" uspid="297" ordinal="0" offset="7" sl="35" sc="0" el="35" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="9" uspid="298" ordinal="0" offset="8" sl="36" sc="0" el="36" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="9" uspid="299" ordinal="0" offset="15" sl="38" sc="0" el="38" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="9" uspid="300" ordinal="0" offset="22" sl="39" sc="0" el="39" ec="0" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="9" uspid="301" ordinal="0" offset="29" sl="40" sc="0" el="40" ec="0" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>BWolf.Patterns.Adapters.PaginationResult[T]</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>System.Int32 BWolf.Patterns.Adapters.PaginationResult[T]::get_ItemCount()</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="302" ordinal="0" offset="0" sl="11" sc="0" el="11" ec="0" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663303</MetadataToken>
+              <Name>BWolf.Patterns.Adapters.PaginationResult[T]::PaginationResult(T[], System.Int32, System.Int32, System.Int32, System.Int32)</Name>
+              <FileRef uid="10" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="303" ordinal="0" offset="0" sl="45" sc="0" el="45" ec="0" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="8" uspid="304" ordinal="0" offset="7" sl="46" sc="0" el="46" ec="0" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="8" uspid="305" ordinal="0" offset="8" sl="47" sc="0" el="47" ec="0" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="8" uspid="306" ordinal="0" offset="15" sl="48" sc="0" el="48" ec="0" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="8" uspid="307" ordinal="0" offset="22" sl="49" sc="0" el="49" ec="0" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="8" uspid="308" ordinal="0" offset="29" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="8" uspid="309" ordinal="0" offset="37" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="10" />
+                <SequencePoint vc="8" uspid="310" ordinal="0" offset="45" sl="52" sc="0" el="52" ec="0" bec="0" bev="0" fileid="10" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>BWolf.Patterns.Adapters.EmbeddedPatterns.Factory.PaginatorFactory</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663304</MetadataToken>
+              <Name>static BWolf.Patterns.Adapters.Enumerable[TItem] BWolf.Patterns.Adapters.EmbeddedPatterns.Factory.PaginatorFactory::GetPaginator[TItem](System.Collections.Generic.IEnumerable[TItem], System.Int32, System.Int32)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="311" ordinal="0" offset="0" sl="19" sc="0" el="19" ec="0" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663305</MetadataToken>
+              <Name>static BWolf.Patterns.Adapters.Collection[TItem] BWolf.Patterns.Adapters.EmbeddedPatterns.Factory.PaginatorFactory::GetPaginator[TItem](System.Collections.Generic.ICollection[TItem], System.Int32, System.Int32)</Name>
+              <FileRef uid="11" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="312" ordinal="0" offset="0" sl="29" sc="0" el="29" ec="0" bec="0" bev="0" fileid="11" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>
