@@ -30,14 +30,14 @@ namespace BWolf.Patterns.Factory.Simple.Tests
 
         /// <summary>
         /// Tests whether the knight can lose health.
-        /// It expects the knight to lose no amount of health if he has a shield.
+        /// It expects the knight to lose no amount of health if he has a shield with max strength.
         /// </summary>
         [Test]
         public void Test_Remove_Shield()
         {
             // Arrange.
             int pointsToRemove = 5;
-            ShieldStatusPoints shield = new ShieldStatusPoints(0, pointsToRemove);
+            ShieldStatusPoints shield = new ShieldStatusPoints(1.0f, pointsToRemove);
             KnightHealthPoints health = new KnightHealthPoints(shield);
 
             // Act.
