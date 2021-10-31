@@ -35,6 +35,13 @@ namespace BWolf.Patterns.Decorator
         }
 
         /// <summary>
+        /// Initializes the heal spell with base configuration values.
+        /// </summary>
+        public Heal() : this(SpellConfig.BASE_HEAL_AMOUNT, SpellConfig.BASE_HEAL_CAST_TIME)
+        {
+        }
+
+        /// <summary>
         /// Casts the heal, healing the target actor instantly if no time is used
         /// or adding a heal status if time has been set.
         /// </summary>

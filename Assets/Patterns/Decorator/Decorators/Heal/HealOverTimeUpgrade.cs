@@ -31,6 +31,13 @@ namespace BWolf.Patterns.Decorator
             this.time = time;
         }
 
+        public HealOverTimeUpgrade(Spell spell) : this(spell,
+            SpellUpgradeConfig.HEAL_OVER_TIME_HEAL_INCREASE,
+            SpellUpgradeConfig.HEAL_OVER_TIME_HEAL_TIME)
+        {
+
+        }
+
         /// <summary>
         /// Applies the heal increase and set the new time in which the heal is applied.
         /// </summary>
@@ -38,10 +45,7 @@ namespace BWolf.Patterns.Decorator
         /// <param name="target">The target actor.</param>
         public override void OnCast(ActorBehaviour caster, ActorBehaviour target)
         {
-            Heal heal = p_spell as Heal;
-            if (heal == null)
-                throw new IncompatibleUpgradeException(typeof(Heal).Name, p_spell.GetType().Name);
-
+            Heal heal = GetRootSpell<Heal>();
             heal.amount = Mathf.RoundToInt(heal.amount * healIncrease);
             heal.time = time;
 

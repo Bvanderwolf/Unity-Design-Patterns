@@ -36,15 +36,7 @@ namespace BWolf.Patterns.Decorator
         /// <summary>
         /// Initializes spells with upgrades and casts heal spell on itself.
         /// </summary>
-        private void Awake()
-        {
-            _castDispatcher = GetComponent<CastBehaviour>();
-
-            UpgradeSpell(SpellType.HEAL, SpellUpgradeType.CAST_TIME_DECREASE);
-            UpgradeSpell(SpellType.HEAL, SpellUpgradeType.HEAL_INCREASE);
-            UpgradeSpell(SpellType.HEAL, SpellUpgradeType.HEAL_OVER_TIME);
-            CastSpell(SpellType.HEAL, this);
-        }
+        private void Awake() => _castDispatcher = GetComponent<CastBehaviour>();
 
         /// <summary>
         /// Makes the actor cast a spell.

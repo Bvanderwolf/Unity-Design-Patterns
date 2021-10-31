@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace BWolf.Patterns.Decorator
 {
     /// <summary>
@@ -5,6 +8,15 @@ namespace BWolf.Patterns.Decorator
     /// </summary>
     public static class SpellConfig
     {
+        public static readonly Dictionary<Type, SpellType> typeMap = new Dictionary<Type, SpellType>
+        {
+            { typeof(FireBall), SpellType.FIRE_BALL },
+            { typeof(FireBallExplosion), SpellType.FIRE_BALL_EXPLOSION },
+            { typeof(Heal), SpellType.HEAL },
+            { typeof(Poison), SpellType.POISON },
+            { typeof(Rupture), SpellType.RUPTURE }
+        };
+
         /* FIREBALL*/
         public const int BASE_FIREBALL_DAMAGE       = 5;
         public const float BASE_FIREBALL_SPEED      = 50.0f;
@@ -14,6 +26,7 @@ namespace BWolf.Patterns.Decorator
         public const int BASE_POISON_DAMAGE         = 8;
         public const float BASE_POISON_CAST_TIME    = 1f;
         public const float BASE_POISON_TIME         = 3f;
+        public const float BASE_POISON_FREQUENCY    = 0.5f;
 
         /* HEAL */
         public const int BASE_HEAL_AMOUNT           = 10;

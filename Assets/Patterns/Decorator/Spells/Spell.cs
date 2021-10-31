@@ -3,7 +3,7 @@ using System;
 namespace BWolf.Patterns.Decorator
 {
     /// <summary>
-    /// Represents a castable spell with a cast time.
+    /// Represents a spell with a cast time.
     /// </summary>
     public abstract class Spell
     {
@@ -40,5 +40,15 @@ namespace BWolf.Patterns.Decorator
         /// <param name="caster">The casting actor.</param>
         /// <param name="target">The target actor.</param>
         public abstract void OnHit(ActorBehaviour caster, ActorBehaviour target);
+
+        /// <summary>
+        /// Resets the spells internal state.
+        /// </summary>
+        public virtual void Reset() => this.castTime = 0;
+
+        /// <summary>
+        /// Sets the base configuration values for the spell.
+        /// </summary>
+        public virtual void SetBaseValues() { }
     }
 }

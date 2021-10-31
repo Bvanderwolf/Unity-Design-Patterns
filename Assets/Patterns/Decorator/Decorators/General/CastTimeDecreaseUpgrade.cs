@@ -18,6 +18,10 @@ namespace BWolf.Patterns.Decorator
         /// <param name="decrease">The decrease in cast time percentage wise.</param>
         public CastTimeDecreaseUpgrade(Spell spell, float decrease) : base(spell, decrease) => this.castTimeDecrease = decrease;
 
+        public CastTimeDecreaseUpgrade(Spell spell) : this(spell, SpellUpgradeConfig.CAST_TIME_DECREASE)
+        {
+        }
+
         /// <summary>
         /// Decreases the cast time of the spell.
         /// </summary>
@@ -25,7 +29,8 @@ namespace BWolf.Patterns.Decorator
         /// <param name="target">The target actor.</param>
         public override void OnCast(ActorBehaviour caster, ActorBehaviour target)
         {
-            p_spell.castTime *= castTimeDecrease;
+            Spell spell = GetRootSpell();
+            spell.castTime *= (1f - castTimeDecrease);
 
             base.OnCast(caster, target);
         }

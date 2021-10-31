@@ -20,6 +20,10 @@ namespace BWolf.Patterns.Decorator
         /// <param name="healIncrease">The heal increase percentage wise.</param>
         public HealIncreaseUpgrade(Spell spell, float healIncrease) : base(spell) => this.healIncrease = healIncrease;
 
+        public HealIncreaseUpgrade(Spell spell) : this(spell, SpellUpgradeConfig.HEAL_INCREASE)
+        {
+        }
+
         /// <summary>
         /// Increases the heal amount before.
         /// </summary>
@@ -27,10 +31,7 @@ namespace BWolf.Patterns.Decorator
         /// <param name="target">The target actor.</param>
         public override void OnCast(ActorBehaviour caster, ActorBehaviour target)
         {
-            Heal heal = p_spell as Heal;
-            if (heal == null)
-                throw new IncompatibleUpgradeException(typeof(Heal).Name, p_spell.GetType().Name);
-
+            Heal heal = GetRootSpell<Heal>();
             heal.amount = Mathf.RoundToInt(heal.amount * healIncrease);
 
             base.OnCast(caster, target);

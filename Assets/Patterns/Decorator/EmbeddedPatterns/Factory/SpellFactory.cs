@@ -1,3 +1,4 @@
+using BWolf.Patterns.Decorator.EmbeddedPaterns.Pooling;
 using System;
 using System.Collections.Generic;
 
@@ -16,38 +17,8 @@ namespace BWolf.Patterns.Decorator.EmbeddedPaterns.Factory
         /// <returns>The created spell.</returns>
         public static Spell Create(SpellType spellType, List<SpellUpgradeType> upgrades)
         {
-            switch (spellType)
-            {
-                case SpellType.FIRE_BALL:
-                    return ApplyUpgrades(new FireBall(
-                        SpellConfig.BASE_FIREBALL_DAMAGE,
-                        SpellConfig.BASE_FIREBALL_SPEED,
-                        SpellConfig.BASE_FIREBALL_CAST_TIME
-                    ), upgrades);
-
-                case SpellType.HEAL:
-                    return ApplyUpgrades(new Heal(
-                        SpellConfig.BASE_HEAL_AMOUNT,
-                        SpellConfig.BASE_HEAL_CAST_TIME
-                    ), upgrades);
-
-                case SpellType.RUPTURE:
-                    return ApplyUpgrades(new Rupture(
-                        SpellConfig.BASE_RUPTURE_DAMAGE,
-                        SpellConfig.BASE_RUPTURE_RADIUS,
-                        SpellConfig.BASE_RUPTURE_CAST_TIME
-                    ), upgrades);
-
-                case SpellType.POISON:
-                    return ApplyUpgrades(new Poison(
-                        SpellConfig.BASE_POISON_DAMAGE,
-                        SpellConfig.BASE_POISON_TIME,
-                        SpellConfig.BASE_POISON_CAST_TIME
-                    ), upgrades);
-
-                default:
-                    throw new NotImplementedException($"Spell with type {spellType} has not yet been implemented.");
-            }
+            Spell spell = SpellPool.Retrieve(spellType);
+            return ApplyUpgrades(spell, upgrades);
         }
 
         /// <summary>
@@ -56,6 +27,28 @@ namespace BWolf.Patterns.Decorator.EmbeddedPaterns.Factory
         /// <param name="spellType">The spell type.</param>
         /// <returns>The created spell.</returns>
         public static Spell Create(SpellType spellType) => Create(spellType, new List<SpellUpgradeType>());
+
+
+        internal static Spell CreateNew(SpellType spellType)
+        {
+            switch (spellType)
+            {
+                case SpellType.FIRE_BALL:
+                    return new FireBall();
+
+                case SpellType.HEAL:
+                    return new Heal();
+
+                case SpellType.RUPTURE:
+                    return new Rupture();
+
+                case SpellType.POISON:
+                    return new Poison();
+
+                default:
+                    throw new NotImplementedException($"Spell with type {spellType} has not yet been implemented.");
+            }
+        }
 
         /// <summary>
         /// Applies upgrades to a spell. 

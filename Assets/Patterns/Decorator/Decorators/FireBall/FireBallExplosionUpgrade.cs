@@ -7,9 +7,7 @@ namespace BWolf.Patterns.Decorator
 
         public override void OnHit(ActorBehaviour caster, ActorBehaviour target)
         {
-            FireBall fireBall = p_spell as FireBall;
-            if (fireBall == null)
-                throw new IncompatibleUpgradeException(typeof(FireBall).Name, p_spell.GetType().Name);
+            EnsureRootSpell<FireBall>();
 
             caster.CastSpell(SpellType.FIRE_BALL_EXPLOSION, target);
 

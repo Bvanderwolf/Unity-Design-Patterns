@@ -1,6 +1,8 @@
 namespace BWolf.Patterns.Decorator
 {
-
+    /// <summary>
+    /// The types of upgrades for a spell.
+    /// </summary>
     public enum SpellUpgradeType
     {
         HEAL_OVER_TIME              = 0,
