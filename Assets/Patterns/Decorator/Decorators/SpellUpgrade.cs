@@ -34,7 +34,7 @@ namespace BWolf.Patterns.Decorator
         }
 
         /// <inheritdoc/>
-        public override void OnCast(ActorBehaviour caster, ActorBehaviour target) => p_next.OnCast(caster, target);
+        public override void Cast(ActorBehaviour caster, ActorBehaviour target) => p_next.Cast(caster, target);
 
         /// <inheritdoc/>
         public override void OnHit(ActorBehaviour caster, ActorBehaviour target) => _root.OnHit(caster, target);

@@ -14,7 +14,7 @@ namespace BWolf.Patterns.Decorator
         /// <summary>
         /// Initializes the fireball spell with values for its internal state.
         /// </summary>
-        /// <param name="damage">The damage the rupture will do.</param>
+        /// <param name="damage">The damage the fireball will do.</param>
         /// <param name="speed">The speed with which to throw the fireball.</param>
         /// <param name="castTime">The cast time of the spell.</param>
         public FireBall(int damage, float speed, float castTime) : base(damage, castTime) => this.speed = speed;
@@ -27,7 +27,7 @@ namespace BWolf.Patterns.Decorator
         }
 
         ///<inheritdoc/>
-        public override void OnCast(ActorBehaviour caster, ActorBehaviour target)
+        public override void Cast(ActorBehaviour caster, ActorBehaviour target)
         {
             /* Throw fireball object towards the target actor. */
         }
@@ -36,6 +36,22 @@ namespace BWolf.Patterns.Decorator
         public override void OnHit(ActorBehaviour caster, ActorBehaviour target)
         {
             target.Damage(damage);
+        }
+
+        ///<inheritdoc/>
+        public override void Reset()
+        {
+            base.Reset();
+
+            this.speed = 0;
+        }
+
+        ///<inheritdoc/>
+        public override void SetBaseValues()
+        {
+            base.SetBaseValues();
+
+            this.speed = SpellConfig.BASE_FIREBALL_SPEED;
         }
     }
 }

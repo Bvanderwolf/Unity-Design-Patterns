@@ -28,14 +28,28 @@ namespace BWolf.Patterns.Decorator
         }
 
         ///<inheritdoc/>
-        public override void OnCast(ActorBehaviour caster, ActorBehaviour target)
+        public override void Cast(ActorBehaviour caster, ActorBehaviour target)
         {
             /* Spawn rupture object underneath target actor. */
         }
 
         ///<inheritdoc/>
-        public override void OnHit(ActorBehaviour caster, ActorBehaviour target)
+        public override void OnHit(ActorBehaviour caster, ActorBehaviour target) => target.Damage(damage);
+
+        ///<inheritdoc/>
+        public override void SetBaseValues()
         {
+            base.SetBaseValues();
+
+            this.radius = SpellConfig.BASE_RUPTURE_RADIUS;
+        }
+
+        ///<inheritdoc/>
+        public override void Reset()
+        {
+            base.Reset();
+
+            this.radius = 0;
         }
     }
 }

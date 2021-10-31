@@ -32,7 +32,7 @@ namespace BWolf.Patterns.Decorator
         /// </summary>
         /// <param name="caster">The casting actor.</param>
         /// <param name="target">The target actor.</param>
-        public abstract void OnCast(ActorBehaviour caster, ActorBehaviour target);
+        public abstract void Cast(ActorBehaviour caster, ActorBehaviour target);
 
         /// <summary>
         /// Called when the spell has hit the target, additional effects can be applied.

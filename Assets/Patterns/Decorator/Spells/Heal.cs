@@ -47,7 +47,7 @@ namespace BWolf.Patterns.Decorator
         /// </summary>
         /// <param name="caster">The casting actor.</param>
         /// <param name="target">The target actor.</param>
-        public override void OnCast(ActorBehaviour caster, ActorBehaviour target)
+        public override void Cast(ActorBehaviour caster, ActorBehaviour target)
         {
             if (time != 0)
                 target.Heal(amount);
@@ -60,5 +60,25 @@ namespace BWolf.Patterns.Decorator
         /// </summary>
         /// <param name="target">The target actor.</param>
         public override void OnHit(ActorBehaviour caster, ActorBehaviour target) { }
+
+        ///<inheritdoc/>
+        public override void Reset()
+        {
+            base.Reset();
+
+            this.amount = 0;
+            this.time = 0.0f;
+            this.frequency = 0.0f;
+        }
+
+        ///<inheritdoc/>
+        public override void SetBaseValues()
+        {
+            base.SetBaseValues();
+
+            this.amount = SpellConfig.BASE_HEAL_AMOUNT;
+            this.time = 0.0f;
+            this.frequency = 0.0f;
+        }
     }
 }

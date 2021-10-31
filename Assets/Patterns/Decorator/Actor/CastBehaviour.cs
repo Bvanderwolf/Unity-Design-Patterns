@@ -28,7 +28,7 @@ namespace BWolf.Patterns.Decorator
             if (spell.castTime != 0)
                 StartCoroutine(CastWithCastTime(spell, target));
             else
-                spell.OnCast(_actor, target);
+                spell.Cast(_actor, target);
         }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace BWolf.Patterns.Decorator
         {
             yield return new WaitForSeconds(spell.castTime);
 
-            spell.OnCast(_actor, target);
+            spell.Cast(_actor, target);
         }
     }
 }

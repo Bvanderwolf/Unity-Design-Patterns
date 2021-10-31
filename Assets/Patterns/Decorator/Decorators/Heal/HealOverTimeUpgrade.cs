@@ -31,6 +31,10 @@ namespace BWolf.Patterns.Decorator
             this.time = time;
         }
 
+        /// <summary>
+        /// Initializes the upgrade with base configuration values.
+        /// </summary>
+        /// <param name="spell">The spell to upgrade.</param>
         public HealOverTimeUpgrade(Spell spell) : this(spell,
             SpellUpgradeConfig.HEAL_OVER_TIME_HEAL_INCREASE,
             SpellUpgradeConfig.HEAL_OVER_TIME_HEAL_TIME)
@@ -43,13 +47,13 @@ namespace BWolf.Patterns.Decorator
         /// </summary>
         /// <param name="caster">The casting actor.</param>
         /// <param name="target">The target actor.</param>
-        public override void OnCast(ActorBehaviour caster, ActorBehaviour target)
+        public override void Cast(ActorBehaviour caster, ActorBehaviour target)
         {
             Heal heal = GetRootSpell<Heal>();
             heal.amount = Mathf.RoundToInt(heal.amount * healIncrease);
             heal.time = time;
 
-            base.OnCast(caster, target);
+            base.Cast(caster, target);
         }
     }
 }

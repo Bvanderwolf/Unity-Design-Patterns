@@ -16,6 +16,12 @@ namespace BWolf.Patterns.Decorator.EmbeddedPaterns.Factory
         /// <returns>The spell upgrade.</returns>
         public static SpellUpgrade Create(Spell spell, SpellUpgradeType type) => SpellPool.Retrieve(spell, type);
 
+
+        /// <summary>
+        /// Creates a new instance of a spell upgrade.
+        /// </summary>
+        /// <param name="spellType">The spell upgrade type.</param>
+        /// <returns>The new spell upgrade instance.</returns>
         internal static SpellUpgrade CreateNew(Spell spell, SpellUpgradeType type)
         {
             switch (type)

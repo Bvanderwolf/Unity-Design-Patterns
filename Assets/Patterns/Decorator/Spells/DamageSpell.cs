@@ -18,9 +18,17 @@ namespace BWolf.Patterns.Decorator
         public DamageSpell(int damage, float? castTime) : base(castTime) => this.damage = damage;
 
         ///<inheritdoc/>
-        public override void OnCast(ActorBehaviour caster, ActorBehaviour target) { }
+        public override void Cast(ActorBehaviour caster, ActorBehaviour target) { }
 
         ///<inheritdoc/>
         public override void OnHit(ActorBehaviour caster, ActorBehaviour target) { }
+
+        ///<inheritdoc/>
+        public override void Reset()
+        {
+            base.Reset();
+
+            this.damage = 0;
+        }
     }
 }

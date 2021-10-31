@@ -18,7 +18,7 @@ namespace BWolf.Patterns.Decorator
         /// <summary>
         /// Initializes the poison spell with values for its internal state.
         /// </summary>
-        /// <param name="damage">The damage the rupture will do.</param>
+        /// <param name="damage">The damage the poison will do.</param>
         /// <param name="time">The time it takes for the poison to do damage.</param>
         /// <param name="frequency">The frequency with which the poison damage is done.</param>
         /// <param name="castTime">The cast time of the spell.</param>
@@ -41,11 +41,29 @@ namespace BWolf.Patterns.Decorator
         }
 
         ///<inheritdoc/>
-        public override void OnCast(ActorBehaviour caster, ActorBehaviour target) => target.AddDamageStatus(time, frequency, damage);
+        public override void Cast(ActorBehaviour caster, ActorBehaviour target) => target.AddDamageStatus(time, frequency, damage);
 
         ///<inheritdoc/>
         public override void OnHit(ActorBehaviour caster, ActorBehaviour target)
         {
+        }
+
+        ///<inheritdoc/>
+        public override void Reset()
+        {
+            base.Reset();
+
+            this.time = 0;
+            this.frequency = 0;
+        }
+
+        ///<inheritdoc/>
+        public override void SetBaseValues()
+        {
+            base.SetBaseValues();
+
+            this.time = SpellConfig.BASE_POISON_TIME;
+            this.frequency = SpellConfig.BASE_POISON_FREQUENCY;
         }
     }
 }

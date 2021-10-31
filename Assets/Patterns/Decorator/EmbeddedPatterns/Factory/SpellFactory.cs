@@ -28,7 +28,11 @@ namespace BWolf.Patterns.Decorator.EmbeddedPaterns.Factory
         /// <returns>The created spell.</returns>
         public static Spell Create(SpellType spellType) => Create(spellType, new List<SpellUpgradeType>());
 
-
+        /// <summary>
+        /// Creates a new instance of a spell without upgrades.
+        /// </summary>
+        /// <param name="spellType">The spell type.</param>
+        /// <returns>The new spell instance.</returns>
         internal static Spell CreateNew(SpellType spellType)
         {
             switch (spellType)
@@ -44,6 +48,9 @@ namespace BWolf.Patterns.Decorator.EmbeddedPaterns.Factory
 
                 case SpellType.POISON:
                     return new Poison();
+
+                case SpellType.FIRE_BALL_EXPLOSION:
+                    return new FireBallExplosion();
 
                 default:
                     throw new NotImplementedException($"Spell with type {spellType} has not yet been implemented.");
