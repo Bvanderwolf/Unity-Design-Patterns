@@ -112,6 +112,12 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "dtt.singletoncore": {
+      "version": "file:singleton-core",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
