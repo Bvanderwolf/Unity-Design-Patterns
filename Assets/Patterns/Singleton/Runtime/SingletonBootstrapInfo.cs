@@ -1,4 +1,5 @@
 ﻿using System;
+using BWolf.Patterns.Singleton.Exceptions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
@@ -58,13 +59,13 @@ namespace BWolf.Patterns.Singleton
         /// </summary>
         /// <typeparam name="T">The type of singleton to instantiate.</typeparam>
         /// <returns>The created singleton component instance.</returns>
-        internal static T InstantiateSingletonInternal<T>() where T : MonoBehaviour
+        internal static T InstantiateSingletonBehaviour<T>() where T : MonoBehaviour
         {
             if (!HasProfileWithSingletons())
                 throw new InvalidOperationException(ExceptionMessages.GetFor<T>(ExceptionMessage.INVALID_PROFILE));
             
             if (!Settings.profile.TryGetInfo(typeof(T), out BootInfo info))
-                throw new InvalidOperationException($"The {typeof(T).Name} singleton has been accessed but its boot info could not be found. Make sure it is part of the profile.");
+                throw new InvalidOperationException(ExceptionMessages.GetFor<T>(ExceptionMessage.MISSING_BOOT_INFO));
 
             if (info.Mode == BootMode.DISABLED)
                 throw new InvalidOperationException($"The {typeof(T).Name} singleton its instantiation call was made while it has been set to disabled. Make sure to set the mode correctly.");
@@ -76,9 +77,9 @@ namespace BWolf.Patterns.Singleton
                 throw new InvalidOperationException($"The {typeof(T).Name} singleton is part of the profile but has not been bootstrapped before the first scene while it should. Something went wrong during the bootstrap operation.");
 
             if (info.Mode == BootMode.SCENE)
-                return InstantiateSceneSingletonInternal<T>(info);
+                return InstantiateSceneSingletonBehaviour<T>(info);
  
-            return InstantiateSingletonInternal<T>(info); 
+            return InstantiateSingletonBehaviour<T>(info); 
         }
         
         /// <summary>
@@ -141,7 +142,7 @@ namespace BWolf.Patterns.Singleton
             
             if (!HasProfileWithSingletons())
                 return;
-            
+
             GameObject rootGameObject = new GameObject("~SingletonBehaviours");
             Object.DontDestroyOnLoad(rootGameObject);
 
@@ -151,9 +152,12 @@ namespace BWolf.Patterns.Singleton
             {
                 BootInfo info = Settings.profile.GetInfoAt(i);
                 if (info.Prefab == null)
-                    throw new InvalidOperationException($"An error occured during bootstrap :: the prefab at index {i} of profile '{Settings.profile.name}' is null.");
-                
-                if (info.IsCreatedAtBoot)
+                {
+                    Debug.LogWarning(ExceptionMessages.Get(ExceptionMessage.MISSING_PREFAB, i, Settings.profile.name));
+                    continue;
+                }
+
+                if (info.IsCreatedAtBoot) 
                     InstantiateSingleton(info);
             }
 
@@ -179,13 +183,13 @@ namespace BWolf.Patterns.Singleton
         /// <typeparam name="T">The type of singleton to create.</typeparam>
         /// <param name="info">The info to use for creating the singleton.</param>
         /// <returns>The singleton component instance.</returns>
-        private static T InstantiateSceneSingletonInternal<T>(BootInfo info) where T : MonoBehaviour
+        private static T InstantiateSceneSingletonBehaviour<T>(BootInfo info) where T : MonoBehaviour
         {
             for (int i = 0; i < SceneManager.sceneCount; i++)
                 if (SceneManager.GetSceneAt(i).name == info.SceneName)
-                    return InstantiateSingletonInternal<T>(info);
+                    return InstantiateSingletonBehaviour<T>(info);
 
-            throw new InvalidOperationException($"The {typeof(T).Name} singleton could not be instantiated because the scene {info.SceneName} was not loaded. Make sure to use the instance if the scene is loaded.");
+            throw new InvalidOperationException(ExceptionMessages.GetFor<T>(ExceptionMessage.INVALID_SCENE_SINGLETON));
         }
 
         /// <summary>
@@ -196,7 +200,7 @@ namespace BWolf.Patterns.Singleton
         /// <typeparam name="T">The type of singleton to create.</typeparam>
         /// <param name="info">The info to use for creating the singleton.</param>
         /// <returns>The singleton component instance.</returns>
-        private static T InstantiateSingletonInternal<T>(BootInfo info) where T : MonoBehaviour
+        private static T InstantiateSingletonBehaviour<T>(BootInfo info) where T : MonoBehaviour
         {
             // Set instantiation flag before instantiation to avoid recursion in the 
             // case of a component on the same prefab calling the singleton
@@ -208,7 +212,7 @@ namespace BWolf.Patterns.Singleton
 
             info.Instance = gameObject;
 
-            return gameObject.GetComponent<T>();
+            return (gameObject.GetComponentInChildren<T>());
         }
     }
 }

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>23-10-2021 - 10:56:54</Generatedon>
-    <Parser>OpenCoverParser</Parser>
+    <Generatedon>4-3-2023 - 21:41:37</Generatedon>
+    <Parser>MultiReportParser (2x OpenCoverParser)</Parser>
     <Assemblies>2</Assemblies>
-    <Classes>11</Classes>
-    <Files>11</Files>
+    <Classes>18</Classes>
+    <Files>18</Files>
     <Coveredlines>120</Coveredlines>
-    <Uncoveredlines>13</Uncoveredlines>
-    <Coverablelines>133</Coverablelines>
+    <Uncoveredlines>74</Uncoveredlines>
+    <Coverablelines>194</Coverablelines>
     <Totallines>619</Totallines>
-    <Linecoverage>90.2</Linecoverage>
+    <Linecoverage>61.8</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
   </Summary>
@@ -21,14 +21,21 @@
       <Class name="BWolf.Patterns.Adapters.Enumerable[T]" coverage="100" coveredlines="30" coverablelines="30" totallines="81" branchcoverage="" coveredbranches="0" totalbranches="0" />
       <Class name="BWolf.Patterns.Adapters.PaginationResult[T]" coverage="100" coveredlines="9" coverablelines="9" totallines="54" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
-    <Assembly name="BWolf.Patterns.Factory.Runtime" classes="7" coverage="78.6" coveredlines="48" coverablelines="61" totallines="372" branchcoverage="" coveredbranches="0" totalbranches="0">
-      <Class name="BWolf.Patterns.Factory.Simple.ActorBehaviour[T]" coverage="0" coveredlines="0" coverablelines="2" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="BWolf.Patterns.Factory.Simple.KnightHealthPoints" coverage="80" coveredlines="16" coverablelines="20" totallines="80" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="BWolf.Patterns.Factory.Simple.PriestHealthPoints" coverage="87.5" coveredlines="7" coverablelines="8" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="BWolf.Patterns.Factory.Simple.ShieldStatusPoints" coverage="62.5" coveredlines="5" coverablelines="8" totallines="58" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="BWolf.Patterns.Factory.Simple.SquireHealthPoints" coverage="50" coveredlines="1" coverablelines="2" totallines="22" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="BWolf.Patterns.Factory.Simple.StatusPoints" coverage="100" coveredlines="10" coverablelines="10" totallines="70" branchcoverage="" coveredbranches="0" totalbranches="0" />
-      <Class name="BWolf.Patterns.Factory.Simple.StatusPointsFactory" coverage="81.8" coveredlines="9" coverablelines="11" totallines="58" branchcoverage="" coveredbranches="0" totalbranches="0" />
+    <Assembly name="BWolf.Patterns.Factory.Runtime" classes="14" coverage="39.3" coveredlines="48" coverablelines="122" totallines="372" branchcoverage="" coveredbranches="0" totalbranches="0">
+      <Class name="BWolf.Patterns.Factory.ActorBehaviour[T]" coverage="0" coveredlines="0" coverablelines="2" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.KnightHealthPoints" coverage="0" coveredlines="0" coverablelines="20" totallines="80" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.PriestHealthPoints" coverage="0" coveredlines="0" coverablelines="8" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.ShieldStatusPoints" coverage="0" coveredlines="0" coverablelines="8" totallines="58" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.Simple.ActorBehaviour[T]" coverage="0" coveredlines="0" coverablelines="2" totallines="0" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.Simple.KnightHealthPoints" coverage="80" coveredlines="16" coverablelines="20" totallines="0" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.Simple.PriestHealthPoints" coverage="87.5" coveredlines="7" coverablelines="8" totallines="0" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.Simple.ShieldStatusPoints" coverage="62.5" coveredlines="5" coverablelines="8" totallines="0" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.Simple.SquireHealthPoints" coverage="50" coveredlines="1" coverablelines="2" totallines="0" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.Simple.StatusPoints" coverage="100" coveredlines="10" coverablelines="10" totallines="0" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.Simple.StatusPointsFactory" coverage="81.8" coveredlines="9" coverablelines="11" totallines="0" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.SquireHealthPoints" coverage="0" coveredlines="0" coverablelines="2" totallines="22" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.StatusPoints" coverage="0" coveredlines="0" coverablelines="10" totallines="70" branchcoverage="" coveredbranches="0" totalbranches="0" />
+      <Class name="BWolf.Patterns.Factory.StatusPointsFactory" coverage="0" coveredlines="0" coverablelines="11" totallines="58" branchcoverage="" coveredbranches="0" totalbranches="0" />
     </Assembly>
   </Coverage>
 </CoverageReport>

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: SingletonSettings
   m_EditorClassIdentifier: 
   runPreBuildCheck: 1
-  profile: {fileID: 11400000, guid: afd1c72de06068944825b0ce549abafe, type: 2}
+  profile: {fileID: 11400000, guid: 432c0ba0bd5788642bb14a0f6dc11cb4, type: 2}

@@ -24,9 +24,16 @@ namespace BWolf.Patterns.Singleton.Editor
                 return;
             }
             
-            SingletonSettings.SetActiveProfile(asset);
-            EditorUtility.SetDirty(asset);
-            AssetDatabase.SaveAssets();
+            var settings = Resources.Load<SingletonSettings>(nameof(SingletonSettings));
+            if (settings == null)
+            {
+                Debug.LogWarning("Failed to set profile :: singleton settings could not be located in a 'Resources' folder.");
+                return;
+            }
+
+            SerializedObject serializedObject = new SerializedObject(settings);
+            serializedObject.FindProperty("profile").objectReferenceValue = asset;
+            serializedObject.ApplyModifiedProperties();
         }
 
         [MenuItem("Assets/Set As Active Profile", true)]

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using BWolf.Patterns.Singleton.Exceptions;
 
 namespace BWolf.Patterns.Singleton
 {
@@ -13,10 +14,17 @@ namespace BWolf.Patterns.Singleton
     {
         [Header("Boot info")]
         [SerializeField]
-        private BootInfo[] _info;
+        private BootInfo[] _info = null;
 
+        /// <summary>
+        /// The amount of singletons currently in the profile.
+        /// </summary>
         public int Size => _info.Length;
 
+        /// <summary>
+        /// Returns boot information of a singleton at a given index in the array.
+        /// Returns null if the index is out of bounds.
+        /// </summary>
         public BootInfo GetInfoAt(int index)
         {
             try
@@ -39,8 +47,12 @@ namespace BWolf.Patterns.Singleton
         {
             info = default;
             
-            foreach (BootInfo bootInfo in _info)
+            for (int i = 0; i < _info.Length; i++)
             {
+                BootInfo bootInfo = _info[i];
+                if (bootInfo.Prefab == null)
+                    throw new InvalidOperationException(ExceptionMessages.Get(ExceptionMessage.MISSING_PREFAB, i, name));
+
                 if (bootInfo.Prefab.GetComponentInChildren(singletonType) != null)
                 {
                     info = bootInfo;

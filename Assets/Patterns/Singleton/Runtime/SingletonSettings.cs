@@ -22,20 +22,5 @@ namespace BWolf.Patterns.Singleton
         /// The profile used to instantiate singletons in the application.
         /// </summary>
         public SingletonProfile profile;
-
-        /// <summary>
-        /// Sets the profile used to instantiate singletons in the application.
-        /// </summary>
-        public static void SetActiveProfile(SingletonProfile profile)
-        {
-            SingletonSettings settings = Resources.Load<SingletonSettings>(nameof(SingletonSettings));
-            if (settings == null)
-            {
-                Debug.LogWarning("Failed to set profile :: singleton settings could not be located in a 'Resources' folder.");
-                return;
-            }
-
-            settings.profile = profile;
-        }
     }
 }

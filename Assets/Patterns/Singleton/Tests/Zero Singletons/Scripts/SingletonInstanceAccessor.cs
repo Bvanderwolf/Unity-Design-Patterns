@@ -1,8 +1,9 @@
 ﻿using System;
+using BWolf.Patterns.Singleton.Exceptions;
 using NUnit.Framework;
 using UnityEngine;
 
-namespace BWolf.Patterns.Singleton.Tests
+namespace BWolf.Patterns.Singleton.Tests.ZeroSingletons
 {
     public class SingletonInstanceAccessor : MonoBehaviour
     {
@@ -28,18 +29,18 @@ namespace BWolf.Patterns.Singleton.Tests
         {
             try
             {
-                ZeroSingletonsImplementation.Instance.Use();
+                Singleton.Instance.Use();
                 Assert.Fail($"[SingletonInstanceAccessor.{method}]");
             }
             catch (InvalidOperationException e)
             {
-                Assert.AreEqual(e.Message, ExceptionMessages.GetFor<ZeroSingletonsImplementation>(ExceptionMessage.INVALID_PROFILE));
+                Assert.AreEqual(e.Message, ExceptionMessages.GetFor<Singleton>(ExceptionMessage.INVALID_PROFILE));
             }
         }
 
         private static void AssertNonExistence(string method)
         {
-            Assert.IsFalse(ZeroSingletonsImplementation.Exists, $"[SingletonInstanceAccessor.{method}]");
+            Assert.IsFalse(Singleton.Exists, $"[SingletonInstanceAccessor.{method}]");
         }
     }
 }

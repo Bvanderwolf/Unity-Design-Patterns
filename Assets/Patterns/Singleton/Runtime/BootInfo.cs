@@ -11,15 +11,15 @@ namespace BWolf.Patterns.Singleton
     {
         [SerializeField]
         [Tooltip("The prefab containing the singleton component.")]
-        private GameObject _prefab;
+        private GameObject _prefab = null;
         
         [SerializeField]
         [Tooltip("The way the singleton will be created during the applications lifetime.")]
-        private BootMode _mode;
+        private BootMode _mode = BootMode.DISABLED;
         
         [SerializeField]
         [Tooltip("The name of the scene in which the singleton will exist if its boot mode is set to 'scene'.")]
-        private string _sceneName;
+        private string _sceneName = string.Empty;
         
         /// <summary>
         /// The prefab containing the singleton component.
@@ -55,18 +55,10 @@ namespace BWolf.Patterns.Singleton
         }
         /// <summary>
         /// Whether the singleton is created before the first scene is loaded. This is true for singletons with
-        /// a default boot mode or singletons that have their scene name set to the first scene loaded.
+        /// a default boot mode.
         /// </summary>
-        public bool IsCreatedAtBoot
-        {
-            get
-            {
-                bool isDefault = !_isInstantiated && _mode != BootMode.LAZY && _mode != BootMode.SCENE;
-                bool isAtFirstScene = !string.IsNullOrEmpty(_sceneName) && _sceneName == SingletonBootstrapInfo.FirstSceneLoaded.name;
-                return isDefault || isAtFirstScene;
-            }
-        }
-        
+        public bool IsCreatedAtBoot => !_isInstantiated && _mode == BootMode.DEFAULT;
+
         /// <summary>
         /// Whether the singleton will be created at variable time during the application
         /// its lifecycle. This could be because it has its boot mod set to lazy or scene.

@@ -1,4 +1,5 @@
 ﻿using System;
+using BWolf.Patterns.Singleton.Exceptions;
 using UnityEngine;
 
 namespace BWolf.Patterns.Singleton
@@ -31,7 +32,7 @@ namespace BWolf.Patterns.Singleton
                     throw new InvalidOperationException($"{typeof(T).Name} its instance is accessed during editor mode. Make sure to call it only during runtime.");
 
                 if (_isBeingDestroyedByApp)
-                    throw new InvalidOperationException($"{typeof(T).Name} its instance was accessed while it was being destroyed by the application quit event. This is probably  because of an OnDestroy call to it during application quit. There is no guarantee that it will  be alive during this time. Use the 'Exists' property or the 'OnBeforeDestroy' event instead.");
+                    throw new InvalidOperationException(ExceptionMessages.GetFor<T>(ExceptionMessage.IS_BEING_DESTROYED_BY_APP));
 
                 if (_instance == null)
                 {
@@ -42,14 +43,15 @@ namespace BWolf.Patterns.Singleton
                         // on the singleton prefab is calling the instance before the
                         // singleton itself can set it. To avoid recursion from happening
                         // the instance is set using an expensive FindObjectOfType call.
+                        Debug.LogWarning($"{typeof(T).Name} its instance is accessed by a sibling component during initialization. To avoid recursion the instance is set using an expensive FindObjectOfType call. It is advised to use GetComponent<{typeof(T).Name}> instead.");
                         _instance = FindObjectOfType<T>();
                     }
                     else
                     {
                         // If the existence of the singleton has not yet been set by the bootstrap
-                        // service, its assumed its boot mode is set to lazy can return an instantiation
+                        // service, its assumed its boot mode is set to lazy. We can return an instantiation
                         // using the singleton profile.
-                        _instance = SingletonBootstrapInfo.InstantiateSingletonInternal<T>();
+                        _instance = SingletonBootstrapInfo.InstantiateSingletonBehaviour<T>();
                     }
                 }
 
@@ -67,7 +69,7 @@ namespace BWolf.Patterns.Singleton
             
             if (Exists && _instance != this)
             {
-                Debug.LogWarning($"A new instance of {typeof(T).Name} has been encountered, destroying it. :: make sure the component is not part of a scene.");
+                Debug.LogWarning($"Destroying a new instance of {typeof(T).Name} that has been encountered. :: make sure the component is not part of a scene.");
                 Destroy(gameObject);
             }
             else

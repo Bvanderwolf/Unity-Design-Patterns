@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Patterns/Singleton/Tests/Multiple Singletons/Scenes/MultipleSingletonsScene.unity
+    guid: e8ed5e82b5668904cba2f73c622144eb
+  - enabled: 1
+    path: Assets/Patterns/Singleton/Tests/Multiple Singletons/Scenes/SingletonInstantiationScene.unity
+    guid: de0fc0cf32cbeeb4aa6d1d30b75739ef
+  - enabled: 1
+    path: Assets/Patterns/Singleton/Tests/Singleton Interaction/Scenes/SingletonInteractionScene.unity
+    guid: 548611e9470a2244db79ec2d71ec0926
   m_configObjects: {}

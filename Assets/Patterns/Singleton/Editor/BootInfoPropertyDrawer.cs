@@ -14,10 +14,10 @@ namespace BWolf.Patterns.Singleton.Editor
         /// </summary>
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            float height = (2 * EditorGUIUtility.singleLineHeight) + (1 * EditorGUIUtility.standardVerticalSpacing);
-
-            if (property.isExpanded)
-                height += EditorGUIUtility.singleLineHeight;
+            if (!property.isExpanded)
+                return (EditorGUIUtility.singleLineHeight);
+            
+            float height = (3 * EditorGUIUtility.singleLineHeight) + (1 * EditorGUIUtility.standardVerticalSpacing);
             if ((BootMode)property.FindPropertyRelative("_mode").enumValueIndex == BootMode.SCENE)
                 height += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
             
@@ -26,6 +26,7 @@ namespace BWolf.Patterns.Singleton.Editor
         
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
+            EditorGUI.BeginChangeCheck();
             EditorGUI.BeginProperty(position, label, property);
             
             property.isExpanded = Foldout(position, property, label);
@@ -52,6 +53,8 @@ namespace BWolf.Patterns.Singleton.Editor
             }
 
             EditorGUI.EndProperty();
+            if (EditorGUI.EndChangeCheck())
+                property.serializedObject.ApplyModifiedProperties();
         }
 
         private static void DrawSceneNameProperty(Rect position, SerializedProperty property)
@@ -71,7 +74,7 @@ namespace BWolf.Patterns.Singleton.Editor
                     selectedIndex = 0;
             
                 int newSelectedIndex = EditorGUI.Popup(position, label, selectedIndex, scenes);
-                if (newSelectedIndex != 0)
+                if (newSelectedIndex != selectedIndex)
                     sceneNameProperty.stringValue = scenes[newSelectedIndex];
             }
         }

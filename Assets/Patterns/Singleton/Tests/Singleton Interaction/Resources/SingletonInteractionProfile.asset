@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88c6a9be01d2154b8617619d6bfd900, type: 3}
+  m_Name: SingletonInteractionProfile
+  m_EditorClassIdentifier: 
+  _info:
+  - _prefab: {fileID: 3755108059802442018, guid: 15fa565df21732d41bdffb5046dcb784, type: 3}
+    _mode: 1
+    _sceneName: 
+  - _prefab: {fileID: 9180198975420204706, guid: feaac69819a825f4cb6e1d71ec0ae1d7, type: 3}
+    _mode: 3
+    _sceneName: SingletonInteractionScene
+  - _prefab: {fileID: 4655218300571324283, guid: a7a02fafa0f85284880e8972488d64ae, type: 3}
+    _mode: 1
+    _sceneName: 
+  - _prefab: {fileID: 8456117685200364630, guid: 248251e2d40a438479a7b2802457ea56, type: 3}
+    _mode: 1
+    _sceneName: 
+  - _prefab: {fileID: 8297277691002158940, guid: abeff32690424fe499938bd998747ba3, type: 3}
+    _mode: 1
+    _sceneName: 

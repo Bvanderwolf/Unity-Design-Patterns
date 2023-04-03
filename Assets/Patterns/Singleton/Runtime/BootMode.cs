@@ -30,6 +30,9 @@ namespace BWolf.Patterns.Singleton
 
         /// <summary>
         /// The singleton will be created when a specific scene is loaded and destroyed when this scene is unloaded.
+        /// Note that using this boot mode causes it to be created after the scene has loaded causing its instance
+        /// to be available after Start is called on scene objects. You can yield return null in Start to wait for
+        /// this to happen.
         /// </summary>
         [InspectorName("Scene")]
         [Tooltip("The singleton will be created when a specific scene is loaded and destroyed when this scene is unloaded.")]
